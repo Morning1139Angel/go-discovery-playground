@@ -1,0 +1,1 @@
+just some where centralized to wrtie down what I learn about golan
