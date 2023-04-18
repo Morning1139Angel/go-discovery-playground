@@ -39,6 +39,7 @@ func main() {
 	}
 	fmt.Println("lenght of 2d array :", len(twoD))
 
+	//array itteration with range
 	for rowIndx, row := range twoD {
 		fmt.Println("============================")
 		fmt.Printf("Im iterating over the \"twoD\" array's row number %d\n", rowIndx)
