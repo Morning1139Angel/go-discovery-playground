@@ -12,7 +12,7 @@ func main() {
 	firstIntArr5 := [5]int{1, 3, 5, 4} // both part of the array type
 	//👆 the last elem will be the zero value
 
-	//u can tell the compiler to infer the count as well
+	//🌟 u can tell the compiler to infer the count as well
 	lenghtInferedArr := [...]int{1, 33, 444, 98}
 	println("lenght of the array 'lenghtInferedArr' is: ", len(lenghtInferedArr))
 
@@ -20,7 +20,7 @@ func main() {
 	fmt.Printf("firstIntArr5: %v\n", firstIntArr5)
 
 	/*An array's size is fixed;
-	its length is part of its type
+	🌟 its length is part of its type
 	([4]int and [5]int are distinct, incompatible types)*/
 
 	//ERROR!
@@ -32,7 +32,7 @@ func main() {
 	//intArr32 = [32]int(firstIntArr5)
 
 	/*
-		Arrays do not need to be initialized explicitly;
+		🌟 Arrays do not need to be initialized explicitly;
 		the zero value of an array is a ready-to-use array
 		whose elements are themselves zeroed
 	*/
@@ -62,13 +62,13 @@ func main() {
 		}
 	}
 
-	/*note1:
-	Go arrays are values. An array variable denotes the entire array;
-	it is not a pointer to the first array element (as would be the case in C).
-	This means that when you assign or pass around an array value you will make
-	a copy of its contents. One way to think about arrays
-	is as a sort of struct but with indexed rather than named fields:
-	a fixed-size composite value.*/
+	/*
+		🌟 Go arrays are values. An array variable denotes the entire array;
+		it is not a pointer to the first array element (as would be the case in C).
+		This means that when you assign or pass around an array value you will make
+		a copy of its contents. One way to think about arrays
+		is as a sort of struct but with indexed rather than named fields:
+		a fixed-size composite value.*/
 	arr := [5]int{100, 100, 100, 100, 100}
 	fmt.Println("value of arr before calling f1: ", arr)
 	f1(arr)
