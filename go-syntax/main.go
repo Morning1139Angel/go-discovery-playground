@@ -5,10 +5,9 @@ import "fmt"
 func main() {
 	//🌼 Arrays
 	//=================================================
-	intArr32 := [32]int{} //The type of elements and length are
-
-	//the last elem will be the zero value
+	intArr32 := [32]int{}              //The type of elements and length are
 	firstIntArr5 := [5]int{1, 3, 5, 4} // both part of the array type
+	//👆 the last elem will be the zero value
 
 	fmt.Printf("intArr32: %v\n", intArr32)
 	fmt.Printf("firstIntArr5: %v\n", firstIntArr5)
